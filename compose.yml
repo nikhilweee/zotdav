@@ -1,13 +1,12 @@
 services:
   zotdav:
     container_name: zotdav
-    image: zotdav
-    restart: always
     build: .
+    restart: always
     env_file:
       - .env
     # ports:
-    #   - '8843:8080'
+    #   - '8080:8080'
     volumes:
       - '/mnt/storage/zotdav:/var/www/webdav'
     networks:
