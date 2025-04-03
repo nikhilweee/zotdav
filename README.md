@@ -35,6 +35,13 @@ extended support for WebDAV using the `nginx-dav-ext` module.
 
     To follow the logs, you can use `docker compose logs -f`
 
+## Configure Nginx Proxy Manager
+
+Add a new proxy host with the following details
+
+    Forward Hostname: zotdav
+    Forward Port: 8000 
+
 ## Setup Nginx Proxy Manager
 
 We shall use Nginx Proxy Manager (NPM) as a frontend for our WebDAV service. The
